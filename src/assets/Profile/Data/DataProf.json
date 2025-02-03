@@ -1,0 +1,49 @@
+{
+    "id": "1",
+    "name": "Mohsen NikAeen",
+    "email": "mahyar@gmail.com",
+    "location": "Sari, Iran",
+    "birthday": "12th September",
+    "bio": "lorem ipsum .....",
+    "title":"Software Developer",
+    "profilePicture": "https://....",
+    "skills": [
+        {
+            "name": "HTML",
+            "value": 100
+        },
+        {
+            "name": "CSS",
+            "value": 48
+        },
+        {
+            "name": "JS",
+            "value": 55
+        },
+        {
+            "name": "React",
+            "value": 84
+        }
+    ],
+    "projects": [
+        {
+            "name": "SITCA Website",
+            "projectPicture": "https://",
+            "links": {
+                "link1url": "https://",
+                "link1text": "Link 1",
+                "link2url": "https://",
+                "link2text": "Link 2"
+            }
+        }
+    ],
+    "links": {
+        "dribble": "",
+        "linkedin": "https://....",
+        "github": "https://....",
+        "custom_link": {
+            "link": "https://....",
+            "text": "My link"
+        }
+    }
+}
