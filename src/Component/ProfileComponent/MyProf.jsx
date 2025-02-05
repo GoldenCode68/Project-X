@@ -97,10 +97,10 @@ const MyProf = () => {
               <div className="m-auto w-96 h-8 border-cyan-50 mt-4">
                 {/* location */}
                 <div className="m-auto ml-7 w-32 h-6 border-cyan-50 float-left">
-                  <div className="w-6 h-6 rounded-full bg-gradient-to-l from-purple-700 to-blue-700 float-left">
+                  <div className="w-6 h-6 rounded-full bg-gradient-to-l from-purple-700 to-blue-700 float-left flex justify-center items-center">
                     <img
                       src="./src/assets/Profile/img/Icon (4).png"
-                      className="w-3 h-4 m-auto relative top-1"
+                      className="w-3 h-4"
                     />
                   </div>
                   <div
