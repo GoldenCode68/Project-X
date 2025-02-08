@@ -178,3 +178,12 @@ body{
       height: 750px;
     }
   }
+
+#portfolio{
+  /* width: 1250px; */
+  /* border: 1px solid red; */
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: flex;
+}

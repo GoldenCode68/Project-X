@@ -3,11 +3,11 @@ import React, { useState } from "react";
 const MySkills = () => {
   const [ListSkill, setListSkill] = useState([
     { skill: "Figma", percentage: 70 },
-    { skill: "Adobe XD", percentage: 50 },
-    { skill: "Photoshop", percentage: 50 },
-    { skill: "Illustrator", percentage: 50 },
-    { skill: "Aftereffect", percentage: 50 },
-    { skill: "Indesign", percentage: 50 },
+    { skill: "Adobe XD", percentage: 25 },
+    { skill: "Photoshop", percentage: 30 },
+    { skill: "Illustrator", percentage: 85 },
+    { skill: "Aftereffect", percentage: 45 },
+    { skill: "Indesign", percentage: 75 },
   ]);
 
   return (
