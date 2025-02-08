@@ -4,7 +4,7 @@ const MySkills = () => {
   const [ListSkill, setListSkill] = useState([
     { skill: "Figma", percentage: 70 },
     { skill: "Adobe XD", percentage: 25 },
-    { skill: "Photoshop", percentage: 30 },
+    { skill: "Photoshop", percentage: 100},
     { skill: "Illustrator", percentage: 85 },
     { skill: "Aftereffect", percentage: 45 },
     { skill: "Indesign", percentage: 75 },
