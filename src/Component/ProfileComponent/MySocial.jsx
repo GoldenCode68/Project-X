@@ -15,7 +15,7 @@ const MySocial = () => {
         {/* top--1 */}
         <div className="w-full h-32 flex mb-4">
           {/* email */}
-          <div className="w-7/12 h-32 mr-2 rounded-3xl bg-blue-950 flex">
+          <div className="footer w-7/12 h-32 mr-2 rounded-3xl bg-blue-950 flex">
             {/* part one */}
             <div className="w-36 h-20 flex">
               <img
@@ -28,7 +28,7 @@ const MySocial = () => {
               />
             </div>
             {/* part tow */}
-            <div className="w-72 h-20 ml-3">
+            <div className="part-tow w-72 h-20 ml-3">
               <div className="w-20 h-5 mt-4" style={{ fontFamily: "space" }}>
                 Email
               </div>
@@ -38,7 +38,7 @@ const MySocial = () => {
             </div>
           </div>
           {/* figma */}
-          <div className="w-5/12 h-32 ml-2 rounded-3xl bg-gradient-to-b from-zinc-800 to-slate-950 flex">
+          <div className="footer w-5/12 h-32 ml-2 rounded-3xl bg-gradient-to-b from-zinc-800 to-slate-950 flex">
             {/* part one */}
             <div className="w-32 h-20 flex">
               <img
@@ -63,7 +63,7 @@ const MySocial = () => {
         </div>
         {/* top--2 */}
         {/* instagram */}
-        <div className="flex w-full h-32 mb-4 rounded-3xl bg-gradient-to-br via-blue-500 from-sky-500 via-yellow-500 via-red-500 to-purple-500 ">
+        <div className="footer flex w-full h-32 mb-4 rounded-3xl bg-gradient-to-br via-blue-500 from-sky-500 via-yellow-500 via-red-500 to-purple-500 ">
           {/* part one */}
           <div className="w-36 h-20 flex">
             <img
@@ -88,7 +88,7 @@ const MySocial = () => {
         {/* top--3 */}
         <div className="w-full h-32 flex mb-4">
           {/* linkdin */}
-          <div className="w-7/12 h-32 mr-2 rounded-3xl bg-gradient-to-b from-cyan-300 to-sky-600 flex">
+          <div className="footer w-7/12 h-32 mr-2 rounded-3xl bg-gradient-to-b from-cyan-300 to-sky-600 flex">
             {/* part one */}
             <div className="w-36 h-20 flex">
               <img
@@ -111,7 +111,7 @@ const MySocial = () => {
             </div>
           </div>
           {/* dev */}
-          <div className="w-5/12 h-32 ml-2 rounded-3xl bg-gradient-to-b from-gray-50 to-gray-200 flex">
+          <div className="footer w-5/12 h-32 ml-2 rounded-3xl bg-gradient-to-b from-gray-50 to-gray-200 flex">
             {/* part one */}
             <div className="w-36 h-20 flex">
               <img
@@ -139,7 +139,7 @@ const MySocial = () => {
         </div>
         {/* top--4 */}
         {/* github */}
-        <div className="w-full h-32 rounded-3xl bg-gradient-to-t from-black to-gray-800 flex">
+        <div className="footer w-full h-32 rounded-3xl bg-gradient-to-t from-black to-gray-800 flex">
           {/* part one */}
           <div className="w-36 h-20 flex">
             <img

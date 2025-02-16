@@ -15,27 +15,27 @@ const MyProf = () => {
   ]);
 
   return (
-    <div className=" border-violet-800 w-3/4 h-96 m-auto mt-52 rounded-3xl bg-gradient-to-b from-black to-zinc-900 to-40%">
+    <div className="border-violet-800 w-3/4 h-96 m-auto mt-52 rounded-3xl bg-gradient-to-b from-black to-zinc-900 to-40%">
       {/* box top */}
       <div className="flex border-inherit w-full h-40 z-10">
         {/* left */}
-        <div className="w-1/3 h-40 z-20 bg-zinc-900 rounded-t-3xl">
-          <div className="border-violet-800 w-full h-10 border-t-2 border-l-2 border-r-2 rounded-t-3xl -mr-2"></div>
-          <div className="border-violet-800 w-full h-32 border-l-2"></div>
+        <div className="box-left w-1/3 h-40 z-20 bg-zinc-900 rounded-t-3xl">
+          <div className=" border-violet-800 w-full h-10 border-t-2 border-l-2 border-r-2 rounded-t-3xl -mr-2"></div>
+          <div className=" border-violet-800 w-full h-32 border-l-2"></div>
         </div>
         {/* center */}
-        <div className="border-l-2 border-b-2 border-r-2 border-violet-800 w-1/3 h-32 z-20 bg-black rounded-b-3xl mt-10">
+        <div className="box-center border-l-2 border-b-2 border-r-2 border-violet-800 w-1/3 h-32 z-20 bg-black rounded-b-3xl mt-10">
           <div className="">
             <img
               src="./src/assets/Profile/img/5588888.png"
-              className="w-80 h-80 m-auto relative bottom-52 rounded-3xl"
+              className="box-center-img w-80 h-80 m-auto relative bottom-52 rounded-3xl"
             />
           </div>
         </div>
         {/* right */}
-        <div className=" w-1/3 h-40 z-20 bg-zinc-900 rounded-t-3xl">
-          <div className="border-violet-800 w-full h-10 border-t-2 border-l-2 border-r-2 rounded-t-3xl"></div>
-          <div className="border-violet-800 w-full h-32 border-r-2"></div>
+        <div className="box-right w-1/3 h-40 z-20 bg-zinc-900 rounded-t-3xl">
+          <div className=" border-violet-800 w-full h-10 border-t-2 border-l-2 border-r-2 rounded-t-3xl"></div>
+          <div className=" border-violet-800 w-full h-32 border-r-2"></div>
         </div>
       </div>
       {/* box bottom */}
@@ -49,7 +49,7 @@ const MyProf = () => {
                 {item.name}
               </div>
               {/* job */}
-              <div className="m-auto w-80 h-6 border-cyan-50 mt-10">
+              <div className="info m-auto w-80 h-6 border-cyan-50 mt-10">
                 <div className="w-4 h-4 rounded-full bg-gradient-to-l from-purple-700 to-blue-700 float-left">
                   <img
                     src="./src/assets/Profile/img/Icon (2).png"
@@ -64,7 +64,7 @@ const MyProf = () => {
                 </div>
               </div>
               {/* time */}
-              <div className="m-auto w-80 h-6 border-cyan-50 mt-1">
+              <div className="info m-auto w-80 h-6 border-cyan-50 mt-1">
                 <div className="w-4 h-4 rounded-full bg-gradient-to-l from-purple-700 to-blue-700 float-left">
                   <img
                     src="./src/assets/Profile/img/fi_calendar.png"
@@ -79,7 +79,7 @@ const MyProf = () => {
                 </div>
               </div>
               {/* student */}
-              <div className="m-auto w-80 h-6 border-cyan-50 mt-1">
+              <div className="info m-auto w-80 h-6 border-cyan-50 mt-1">
                 <div className="w-4 h-4 rounded-full bg-gradient-to-l from-purple-700 to-blue-700 float-left">
                   <img
                     src="./src/assets/Profile/img/Icon (3).png"
@@ -111,7 +111,7 @@ const MyProf = () => {
                   </div>
                 </div>
                 {/* birth */}
-                <div className="m-auto w-48 h-6 border-cyan-50 float-left ml-2">
+                <div className="birth m-auto w-48 h-6 border-cyan-50 float-left ml-2">
                   <div className="w-6 h-6 rounded-full bg-gradient-to-l from-purple-700 to-blue-700 float-left">
                     <img
                       src="./src/assets/Profile/img/Icon (5).png"

@@ -7,9 +7,11 @@ import MySocial from "../../Component/ProfileComponent/MySocial";
 import FooterProf from "../../Component/ProfileComponent/FooterProf";
 
 const Profile = () => {
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <div>
       <HeaderProf />

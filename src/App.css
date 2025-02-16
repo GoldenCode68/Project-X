@@ -1,0 +1,38 @@
+@media (max-width: 450px) {
+  .box-left {
+    width: 20%;
+  }
+  .box-center {
+    width: 60%;
+    /* border: 1px solid red; */
+  }
+  .box-center-img {
+    width: 80%;
+    height: 200px;
+    /* border: 1px solid red; */
+    position: relative;
+    justify-content: center;
+    bottom: 90px;
+  }
+  .box-right {
+    width: 20%;
+  }
+  .info{
+    margin-left: 50px;
+  }
+  .birth{
+    margin-left: 1px;
+  }
+  .my-protfolio{
+    width: 85%;
+    height: 300px;
+  }
+  .footer{
+    display: block;
+  }
+  .part-tow{
+    position: relative;
+    top: -20px;
+    
+}
+}

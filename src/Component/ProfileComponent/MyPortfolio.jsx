@@ -14,7 +14,7 @@ const MyPortfolio = () => {
       <div id="portfolio" className="flex justify-around flex-wrap">
         {/* 1 */}
         <div className="w-96 h-full border-2 border-violet-800 rounded-3xl bg-gradient-to-r from-zinc-900 to-black ml-1.5 mr-1.5 mb-10">
-          <div className="w-80 h-96 m-auto mt-8 border-2 border-violet-800 rounded-3xl bg-gradient-to-r from-zinc-900  to-black"></div>
+          <div className="my-protfolio w-80 h-96 m-auto mt-8 border-2 border-violet-800 rounded-3xl bg-gradient-to-r from-zinc-900  to-black"></div>
           <div
             className="w-48 h-7 mt-4 ml-8 bg-gradient-to-r from-purple-500 to-blue-600 bg-clip-text text-transparent text-2xl"
             style={{ fontFamily: "actor" }}
@@ -38,7 +38,7 @@ const MyPortfolio = () => {
         </div>
         {/* 2 */}
         <div className="w-96 h-full border-2 border-violet-800 rounded-3xl bg-gradient-to-r from-zinc-900 to-black ml-1.5 mr-1.5 mb-10">
-          <div className="w-80 h-96 m-auto mt-8 border-2 border-violet-800 rounded-3xl bg-gradient-to-r from-zinc-900  to-black"></div>
+          <div className="my-protfolio w-80 h-96 m-auto mt-8 border-2 border-violet-800 rounded-3xl bg-gradient-to-r from-zinc-900  to-black"></div>
           <div
             className="w-48 h-7 mt-4 ml-8 bg-gradient-to-r from-purple-500 to-blue-600 bg-clip-text text-transparent text-2xl"
             style={{ fontFamily: "actor" }}
@@ -62,7 +62,7 @@ const MyPortfolio = () => {
         </div>
         {/* 3 */}
         <div className="w-96 h-full border-2 border-violet-800 rounded-3xl bg-gradient-to-r from-zinc-900 to-black ml-1.5 mr-1.5 mb-10">
-          <div className="w-80 h-96 m-auto mt-8 border-2 border-violet-800 rounded-3xl bg-gradient-to-r from-zinc-900  to-black"></div>
+          <div className="my-protfolio w-80 h-96 m-auto mt-8 border-2 border-violet-800 rounded-3xl bg-gradient-to-r from-zinc-900  to-black"></div>
           <div
             className="w-48 h-7 mt-4 ml-8 bg-gradient-to-r from-purple-500 to-blue-600 bg-clip-text text-transparent text-2xl"
             style={{ fontFamily: "actor" }}
@@ -86,7 +86,7 @@ const MyPortfolio = () => {
         </div>
         {/* 4 */}
         <div className="w-96 h-full border-2 border-violet-800 rounded-3xl bg-gradient-to-r from-zinc-900 to-black ml-1.5 mr-1.5 mb-10">
-          <div className="w-80 h-96 m-auto mt-8 border-2 border-violet-800 rounded-3xl bg-gradient-to-r from-zinc-900  to-black"></div>
+          <div className="my-protfolio w-80 h-96 m-auto mt-8 border-2 border-violet-800 rounded-3xl bg-gradient-to-r from-zinc-900  to-black"></div>
           <div
             className="w-48 h-7 mt-4 ml-8 bg-gradient-to-r from-purple-500 to-blue-600 bg-clip-text text-transparent text-2xl"
             style={{ fontFamily: "actor" }}
@@ -110,7 +110,7 @@ const MyPortfolio = () => {
         </div>
         {/* 5 */}
         <div className="w-96 h-full border-2 border-violet-800 rounded-3xl bg-gradient-to-r from-zinc-900 to-black ml-1.5 mr-1.5 mb-10">
-          <div className="w-80 h-96 m-auto mt-8 border-2 border-violet-800 rounded-3xl bg-gradient-to-r from-zinc-900  to-black"></div>
+          <div className="my-protfolio w-80 h-96 m-auto mt-8 border-2 border-violet-800 rounded-3xl bg-gradient-to-r from-zinc-900  to-black"></div>
           <div
             className="w-48 h-7 mt-4 ml-8 bg-gradient-to-r from-purple-500 to-blue-600 bg-clip-text text-transparent text-2xl"
             style={{ fontFamily: "actor" }}
@@ -134,7 +134,7 @@ const MyPortfolio = () => {
         </div>
         {/* 6 */}
         <div className="w-96 h-full border-2 border-violet-800 rounded-3xl bg-gradient-to-r from-zinc-900 to-black ml-1.5 mr-1.5 mb-10">
-          <div className="w-80 h-96 m-auto mt-8 border-2 border-violet-800 rounded-3xl bg-gradient-to-r from-zinc-900  to-black"></div>
+          <div className="my-protfolio w-80 h-96 m-auto mt-8 border-2 border-violet-800 rounded-3xl bg-gradient-to-r from-zinc-900  to-black"></div>
           <div
             className="w-48 h-7 mt-4 ml-8 bg-gradient-to-r from-purple-500 to-blue-600 bg-clip-text text-transparent text-2xl"
             style={{ fontFamily: "actor" }}
