@@ -187,3 +187,28 @@ body{
   margin: auto;
   display: flex;
 }
+
+/* اسلاید فعال (وسط) */
+.swiper-slide-active {
+  opacity: 0.25; /* کم‌رنگ کردن اسلاید فعال */
+}
+
+/* اسلاید دوم بعد از فعال (روشن) */
+.swiper-slide-active + .swiper-slide + .swiper-slide {
+  opacity: 1; /* شفافیت کامل */
+}
+
+/* اسلایدهای مجاور (یکی بعد و سه تا بعد از فعال) */
+.swiper-slide-active + .swiper-slide,
+.swiper-slide-active + .swiper-slide + .swiper-slide + .swiper-slide{
+  opacity: 0.5; /* بیشتر کم‌رنگ کردن اسلایدهای دورتر */
+}
+
+.swiper-slide-active + .swiper-slide + .swiper-slide + .swiper-slide + .swiper-slide{
+  opacity: 0.25; /* کم‌رنگ کردن اسلاید چهارم بعد از فعال */
+}
+
+/* استایل پایه اسلایدها */
+.swiper-slide {
+  transition: opacity 0.3s ease; /* انتقال نرم شفافیت */
+}
