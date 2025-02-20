@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useRef } from 'react';
+import AOS from "aos";
 
 const MySocial = () => {
 
@@ -13,10 +14,14 @@ const MySocial = () => {
       }
     };
 
+    useEffect(() => {
+      AOS.init();
+    }, []);
+
   return (
 
         
-    <div id="footer" className="lg:w-10/12 md:w-10/12 w-full m-auto lg:mt-48 mt-24">
+    <div data-aos="fade-up" data-aos-duration="900" id="footer" className="lg:w-10/12 md:w-10/12 w-full m-auto lg:mt-48 mt-24">
         
     <div class="text-center text-4xl">Contact <span class="tracking-wider bg-gradient-to-br from-blue-700 from-10% to-purple-700 to-100%0% w-56 text-transparent bg-clip-text">Us</span></div>
 

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import AOS from "aos";
 
 const MySkills = () => {
   const [ListSkill, setListSkill] = useState([
@@ -10,8 +11,12 @@ const MySkills = () => {
     { skill: "Indesign", percentage: 75 },
   ]);
 
+    useEffect(() => {
+      AOS.init();
+    }, []);
+
   return (
-    <div className="border-2 border-violet-800 w-3/4 h-full m-auto rounded-3xl mt-20 bg-gradient-to-b from-zinc-900  to-black z-10">
+    <div data-aos="fade-up" data-aos-duration="900"  className="border-2 border-violet-800 w-3/4 h-full m-auto rounded-3xl mt-20 bg-gradient-to-b from-zinc-900  to-black z-10">
       <div className="w-11/12 h-5/6 m-auto mt-8">
         {/* logo skill and text */}
         <div className="border-violet-800 w-full h-10">

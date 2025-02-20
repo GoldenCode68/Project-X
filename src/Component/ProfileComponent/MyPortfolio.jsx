@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 
 const MyPortfolio = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div className="m-auto w-10/12 h-full mt-20">
+    <div data-aos="fade-up" data-aos-duration="900" className="m-auto w-10/12 h-full mt-20">
       {/* title */}
       <div
         className="m-auto mb-8 w-40 h-10 bg-gradient-to-r from-blue-600 to-purple-500 bg-clip-text text-transparent text-3xl"
