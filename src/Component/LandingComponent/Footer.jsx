@@ -1,23 +1,22 @@
 import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useRef } from "react";
+import '@splidejs/splide/dist/css/splide.min.css';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
 import AOS from "aos";
 
 // Import Swiper styles
 import "swiper/css";
 const Footer = () => {
-  const swiperRef = useRef(null); // ذخیره مرجع Swiper
+  
+  const splideRef = useRef(null);
 
+  // تابع برای انتقال به اسلاید مشخص با کلیک
   const handleSlideClick = (index) => {
-    if (swiperRef.current) {
-      const targetIndex = index - 2; // دو اسلاید قبل از اسلاید کلیک‌شده
-      swiperRef.current.slideTo(targetIndex); // پرش به اسلاید هدف
+    if (splideRef.current) {
+      splideRef.current.go(index);
     }
   };
-
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   return (
     <>
@@ -35,48 +34,73 @@ const Footer = () => {
         </div>
 
         <div className="w-10/12 flex justify-between mt-24 m-auto">
-          <Swiper
-            effect="coverflow"
-            coverflowEffect={{
-              rotate: 160,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: true,
+        <div className="container mx-auto mt-10">
+        <Splide
+            ref={splideRef}
+            options={{
+              type: 'loop',           // اسلاید بی‌نهایت
+              perPage: 5,             // نمایش ۵ اسلاید در هر صفحه
+              focus: 'center',        // اسلاید وسط به عنوان اولین اسلاید
+              gap: '1rem',            // فاصله بین اسلایدها
+              arrows: false,           // نمایش فلش‌های پیمایش
+              pagination: false,      // غیرفعال کردن صفحه‌بندی
+              drag: 'free',           // فعال‌سازی قابلیت درگ (کشیدن اسلایدها)
+              snap: true,             // اسنپ به نزدیک‌ترین اسلاید
+              autoplay: true,         // فعال کردن autoplay
+              interval: 4000,         // مدت زمان نمایش هر اسلاید
+              breakpoints: {
+                768: {
+                  perPage: 3,
+                },
+                480: {
+                  perPage: 1,
+                },
+              },
             }}
-            onSwiper={(swiper) => (swiperRef.current = swiper)}
-            grabCursor={true}
-            centeredSlides={false}
-            slidesPerView={"5"}
-            spaceBetween={"110"}
-            loop={true} // Enable infinite loop
-            className="w-full max-w-7xl"
           >
-            <SwiperSlide className="swiper-slid cursor-pointer transition-opacity duration-500 text-center">
-              <img src="./src/assets/Landing/images/example1.png" alt="" />
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide cursor-pointer transition-opacity duration-500">
-              <img src="./src/assets/Landing/images/example2.png" alt="" />
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide cursor-pointer transition-opacity duration-500">
-              <img src="./src/assets/Landing/images/example.png" alt="" />
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide cursor-pointer transition-opacity duration-500">
-              <img src="./src/assets/Landing/images/example1.png" alt="" />
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide cursor-pointer transition-opacity duration-500">
-              <img src="./src/assets/Landing/images/example2.png" alt="" />
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide cursor-pointer transition-opacity duration-500">
-              <img src="./src/assets/Landing/images/example.png" alt="" />
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide cursor-pointer transition-opacity duration-500">
-              <img src="./src/assets/Landing/images/example1.png" alt="" />
-            </SwiperSlide>
-            <SwiperSlide className="swiper-slide cursor-pointer transition-opacity duration-500">
-              <img src="./src/assets/Landing/images/example2.png" alt="" />
-            </SwiperSlide>
-          </Swiper>
+            <SplideSlide onClick={() => handleSlideClick(0)}>
+              <div className=" h-64 text-white flex items-center justify-center">
+                <img src="./src/assets/Landing/images/example.png" alt="" />
+              </div>
+            </SplideSlide>
+            <SplideSlide onClick={() => handleSlideClick(1)}>
+              <div className=" h-64 text-white flex items-center justify-center">
+                <img src="./src/assets/Landing/images/example1.png" alt="" />
+              </div>
+            </SplideSlide>
+            <SplideSlide onClick={() => handleSlideClick(2)}>
+              <div className="h-64 text-white flex items-center justify-center">
+                <img src="./src/assets/Landing/images/example2.png" alt="" />
+              </div>
+            </SplideSlide>
+            <SplideSlide onClick={() => handleSlideClick(3)}>
+              <div className="h-64 text-white flex items-center justify-center">
+                <img src="./src/assets/Landing/images/example.png" alt="" />
+              </div>
+            </SplideSlide>
+            <SplideSlide onClick={() => handleSlideClick(4)}>
+              <div className="h-64 text-white flex items-center justify-center">
+                <img src="./src/assets/Landing/images/example1.png" alt="" />
+              </div>
+            </SplideSlide>
+            <SplideSlide onClick={() => handleSlideClick(5)}>
+              <div className="h-64 text-white flex items-center justify-center">
+                <img src="./src/assets/Landing/images/example2.png" alt="" />
+              </div>
+            </SplideSlide>
+            <SplideSlide onClick={() => handleSlideClick(6)}>
+              <div className="h-64 text-white flex items-center justify-center">
+                <img src="./src/assets/Landing/images/example.png" alt="" />
+              </div>
+            </SplideSlide>
+            <SplideSlide onClick={() => handleSlideClick(7)}>
+              <div className="h-64 text-white flex items-center justify-center">
+                <img src="./src/assets/Landing/images/example1.png" alt="" />
+              </div>
+            </SplideSlide>
+          </Splide>
+        </div>
+
         </div>
       </div>
       <div

@@ -212,3 +212,21 @@ body{
 .swiper-slide {
   transition: opacity 0.3s ease; /* انتقال نرم شفافیت */
 }
+
+.splide__slide.is-active{
+  opacity: 1;
+}
+.splide__slide.is-next{
+  opacity: 0.5;
+}
+
+.splide__slide.is-prev{
+  opacity: 0.5;
+}
+
+.splide__slide:not(.is-active,.is-next,.is-prev){
+  opacity: 0.25;
+}
+.splide__slide{
+  transition: all 0.4s;
+}
