@@ -35,10 +35,10 @@ const HerosSction = () => {
         >
           <div className="text-3xl">Hi &#x1F44B;</div>
           <div id="hi" className="mt-6 text-3xl typed">
-            we are
+            We are the
           </div>
           <div className="mt-6">
-            <span className="text-blue-700">SITCA</span> Develope Team
+            <span className="text-blue-700">Reevan</span> Development team
           </div>
           <div
             id="text"
