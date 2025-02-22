@@ -5,8 +5,8 @@ import "intersection-observer";
 import { useEffect } from "react";
 import data from "../../assets/Landing/db/data.json";
 
-import code from "../../assets/Landing/images/code.png"
-import design from "../../assets/Landing/images/design.png"
+import code from "../../assets/Landing/images/code.png";
+import design from "../../assets/Landing/images/design.png";
 
 const OurSkills = () => {
   useEffect(() => {
@@ -50,11 +50,7 @@ const OurSkills = () => {
           >
             <div className="w-10/12 mt-11 tracking-wider">
               <div className="flex w-5/12 items-center relative lg:right-0 right-4">
-                <img
-                  className="md:scale-100 scale-50"
-                  src={code}
-                  alt=""
-                />
+                <img className="md:scale-100 scale-50" src={code} alt="" />
                 <span className="relative lg:left-2 -left-2 lg:text-xl text-sm">
                   Developers
                 </span>
@@ -101,11 +97,7 @@ const OurSkills = () => {
           >
             <div className="w-10/12 mt-11 tracking-wider">
               <div className="flex w-5/12 items-center relative lg:right-0 right-4">
-                <img
-                  className="md:scale-100 scale-50"
-                  src={design}
-                  alt=""
-                />
+                <img className="md:scale-100 scale-50" src={design} alt="" />
                 <span className="relative lg:left-2 -left-2 lg:text-xl text-sm">
                   Designers
                 </span>
