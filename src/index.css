@@ -136,7 +136,7 @@ body{
 
   .banner {
     border-radius: 26px;
-    background-image: url('./src/assets/Landing/images/banner.png');
+    /* background-image: url('./src/assets/Landing/images/banner.png'); */
   }
 
   /* Static Border */

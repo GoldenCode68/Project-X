@@ -4,6 +4,10 @@ import AOS from "aos";
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 
+//images
+import logo from '../../assets/Landing/images/logo.png'
+import logobg from '../../assets/Landing/images/logo-bg.png'
+
 const HerosSction = () => {
   const text = useRef(null);
   useEffect(() => {
@@ -51,7 +55,7 @@ const HerosSction = () => {
           <div
             id="logo-bg"
             style={{
-              backgroundImage: "url(./src/assets/Landing/images/logo-bg.png)",
+              backgroundImage: `url(${logobg})`,
               width: "560px",
               height: "520px",
             }}
@@ -61,7 +65,7 @@ const HerosSction = () => {
               className="relative left-11 top-16"
               width="411px"
               height="350px"
-              src="./src/assets/Landing/images/logo.png"
+              src={logo}
               alt=""
             />
           </div>

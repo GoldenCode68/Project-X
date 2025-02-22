@@ -5,6 +5,9 @@ import "intersection-observer";
 import { useEffect } from "react";
 import data from "../../assets/Landing/db/data.json";
 
+import code from "../../assets/Landing/images/code.png"
+import design from "../../assets/Landing/images/design.png"
+
 const OurSkills = () => {
   useEffect(() => {
     AOS.init();
@@ -49,7 +52,7 @@ const OurSkills = () => {
               <div className="flex w-5/12 items-center relative lg:right-0 right-4">
                 <img
                   className="md:scale-100 scale-50"
-                  src="./src/assets/Landing/images/code.png"
+                  src={code}
                   alt=""
                 />
                 <span className="relative lg:left-2 -left-2 lg:text-xl text-sm">
@@ -100,7 +103,7 @@ const OurSkills = () => {
               <div className="flex w-5/12 items-center relative lg:right-0 right-4">
                 <img
                   className="md:scale-100 scale-50"
-                  src="./src/assets/Landing/images/design.png"
+                  src={design}
                   alt=""
                 />
                 <span className="relative lg:left-2 -left-2 lg:text-xl text-sm">

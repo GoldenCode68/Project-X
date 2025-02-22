@@ -5,6 +5,8 @@ import { useEffect } from "react";
 import data from "../../assets/Landing/db/data.json";
 import { Link } from "react-router-dom";
 
+import img from "../../assets/Landing/images/nik.png"
+
 const OurTeam = () => {
   useEffect(() => {
     AOS.init();
@@ -30,7 +32,7 @@ const OurTeam = () => {
                   className="m-auto students box-border relative flex items-center flex-col justify-around mt-10"
                 >
                   <div className="imgs mt-3">
-                    <img src="./src/assets/Landing/images/nik.png" alt="" />
+                    <img src={img} alt="" />
                   </div>
                   <div className="names text-xl tracking-wider">
                     {person.name}

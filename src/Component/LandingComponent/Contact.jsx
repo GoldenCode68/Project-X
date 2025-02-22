@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 
+//images
+import paperplane from '../../assets/Landing/images/paperplane.png';
+import banner from '../../assets/Landing/images/banner.png'
+
 const Contact = () => {
   useEffect(() => {
     AOS.init();
@@ -14,11 +18,11 @@ const Contact = () => {
       className="lg:w-10/12 md:w:10/12 w-full m-auto"
     >
       <div id="content-four" className="w-full m-auto mt-40 lg:block hidden">
-        <div className="banner bg-no-repeat bg-cover h-44 w-full box-border relative flex justify-center items-center flex-col mt-10">
+        <div style={{ backgroundImage: `url(${banner})` }} className="banner bg-no-repeat bg-cover h-44 w-full box-border relative flex justify-center items-center flex-col mt-10">
           <div className="w-10/12 h-20 flex justify-between items-center">
             <div className="flex justify-between items-center">
               <div>
-                <img src="./src/assets/Landing/images/paperplane.png" alt="" />
+                <img src={paperplane} alt="" />
               </div>
               <div className="h-20 flex flex-col justify-between relative left-4">
                 <p
