@@ -30,8 +30,8 @@ body{
 }
 
 .students {
-    width: 366px;
-    height: 245px;    
+    /* width: 366px;
+    height: 245px;     */
     background: black;
     border-radius: 20px;
   }
@@ -215,17 +215,21 @@ body{
 
 .splide__slide.is-active{
   opacity: 1;
+  padding-top: 0px;
 }
 .splide__slide.is-next{
   opacity: 0.5;
+  padding-top: 3px;
 }
 
 .splide__slide.is-prev{
   opacity: 0.5;
+  padding-top: 3px;
 }
 
 .splide__slide:not(.is-active,.is-next,.is-prev){
   opacity: 0.25;
+  padding-top: 6px;
 }
 .splide__slide{
   transition: all 0.4s;
