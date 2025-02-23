@@ -22,14 +22,14 @@ const OurTeam = () => {
         </div>
         <div
           id="team"
-          className="3xl:w-10/12 w-full m-auto flex lg:justify-around md:justify-around justify-evenly flex-wrap mt-8"
+          className="3xl:w-10/12 w-full m-auto flex lg:justify-center md:justify-around justify-evenly flex-wrap lg:mt-20 mt-8 lg:gap-10"
         >
           {data.people.map((person, index) => (
             <div data-aos="fade-up" data-aos-duration="900">
               <Link to={"/Profile"}>
                 <div
                   key={index}
-                  className="m-auto lg:w-[366px] lg:h-[245px] md:w-[366px] md:h-[245px] w-[170px] h-[122px] students box-border relative flex items-center flex-col justify-around mt-10"
+                  className="m-auto lg:w-[366px] lg:h-[245px] md:w-[366px] md:h-[245px] w-[170px] h-[122px] students box-border relative flex items-center flex-col justify-around lg:mt-0 mt-10"
                 >
                   <div className="imgs mt-3 lg:w-[149px] lg:h-[149px] md:w-[149px] md:h-[149px] w-[52px] h-[52px]">
                     <img src={img} alt="" />
