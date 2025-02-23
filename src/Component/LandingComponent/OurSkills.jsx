@@ -40,13 +40,13 @@ const OurSkills = () => {
         </div>
         <div
           id=""
-          className="w-full mt-8 flex justify-around"
+          className="w-full mt-8 flex items-center lg:justify-around md:justify-around lg:flex-row md:flex-row flex-col"
           data-aos="slide-up"
           data-aos-duration="1200"
         >
           <div
             id="delevopers"
-            className="skill box-border relative flex items-center flex-col mt-10"
+            className="skill lg:w-[44%] md:w-[44%] min-w-[246px] box-border relative flex items-center flex-col mt-10"
           >
             <div className="w-10/12 mt-11 tracking-wider">
               <div className="flex w-5/12 items-center relative lg:right-0 right-4">
@@ -93,7 +93,7 @@ const OurSkills = () => {
 
           <div
             id="designers"
-            className="skill box-border relative flex items-center flex-col mt-10"
+            className="skill lg:w-[44%] md:w-[44%] min-w-[246px] box-border relative flex items-center flex-col mt-10"
           >
             <div className="w-10/12 mt-11 tracking-wider">
               <div className="flex w-5/12 items-center relative lg:right-0 right-4">
