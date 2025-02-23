@@ -30,10 +30,12 @@ body{
 }
 
 .students {
-    width: 366px;
-    height: 245px;    
+    /* width: 366px;
+    height: 245px;     */
     background: black;
     border-radius: 20px;
+    animation: moveUpReverse 0.3s ease-in-out forwards;
+    position: relative;
   }
 
   .students::after{
@@ -62,9 +64,47 @@ body{
     background-size: 400% 400%;
     border-radius: 20px;
     opacity: 1;
-    animation: gradientRotate 4s linear infinite paused; /* Initial state paused */
+    animation: gradientRotate 3s linear infinite paused; /* Initial state paused */
     transition: opacity 0.3s ease-in-out;
   }
+
+  .students:hover::before{
+    animation-play-state: running;
+  }
+
+  @keyframes gradientRotate {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 300% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.students:hover{
+  animation: moveUp 0.3s ease-in-out forwards;
+}
+@keyframes moveUp {
+0% {
+  top: 0; /* Initial state */
+}
+100% {
+  top: -5px; /* Move 5px up on hover */
+}
+}
+@keyframes moveUpReverse {
+0% {
+  top: -5px; /* Top position when hovered */
+}
+100% {
+  top: 0; /* Return to initial position */
+}
+}
+
+
 
   #personSkill{
     font-family: inter;
@@ -118,6 +158,10 @@ body{
     transition: opacity 0.3s ease-in-out;
   }
 
+  .skill:hover::before{
+    animation-play-state: running;
+  }
+
 
   #progress::after{
     background-color: #6C63FF;
@@ -152,8 +196,12 @@ body{
     background-size: 400% 400%;
     border-radius: 26px;
     opacity: 1;
-    animation: gradientRotate 4s linear infinite paused; /* Initial state paused */
+    animation: gradientRotate 5s linear infinite paused; /* Initial state paused */
     transition: opacity 0.3s ease-in-out;
+  }
+
+  .banner:hover::before{
+    animation-play-state: running;
   }
 
 
@@ -215,17 +263,21 @@ body{
 
 .splide__slide.is-active{
   opacity: 1;
+  padding-top: 0px;
 }
 .splide__slide.is-next{
   opacity: 0.5;
+  padding-top: 3px;
 }
 
 .splide__slide.is-prev{
   opacity: 0.5;
+  padding-top: 3px;
 }
 
 .splide__slide:not(.is-active,.is-next,.is-prev){
   opacity: 0.25;
+  padding-top: 6px;
 }
 .splide__slide{
   transition: all 0.4s;

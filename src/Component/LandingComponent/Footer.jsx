@@ -38,7 +38,7 @@ const Footer = () => {
           </span>
         </div>
 
-        <div className="w-10/12 flex justify-between mt-20 m-auto">
+        <div className="lg:w-10/12 w-11/12 flex justify-between mt-20 m-auto">
           <div className="container mx-auto">
             <Splide
               ref={splideRef}
@@ -46,7 +46,7 @@ const Footer = () => {
                 type: "loop", // اسلاید بی‌نهایت
                 perPage: 5, // نمایش ۵ اسلاید در هر صفحه
                 focus: "center", // اسلاید وسط به عنوان اولین اسلاید
-                gap: "1rem", // فاصله بین اسلایدها
+                gap: "0rem", // فاصله بین اسلایدها
                 arrows: false, // نمایش فلش‌های پیمایش
                 pagination: false, // غیرفعال کردن صفحه‌بندی
                 drag: "free", // فعال‌سازی قابلیت درگ (کشیدن اسلایدها)
@@ -58,48 +58,48 @@ const Footer = () => {
                     perPage: 3,
                   },
                   480: {
-                    perPage: 1,
+                    perPage: 3,
                   },
                 },
               }}
             >
               <SplideSlide onClick={() => handleSlideClick(0)}>
-                <div className=" h-64 text-white flex items-center justify-center">
+                <div className=" h-64 text-white flex items-center justify-center lg:scale-100 scale-75">
                   <img src={slide1} alt="" />
                 </div>
               </SplideSlide>
               <SplideSlide onClick={() => handleSlideClick(1)}>
-                <div className=" h-64 text-white flex items-center justify-center">
+                <div className=" h-64 text-white flex items-center justify-center lg:scale-100 scale-75">
                   <img src={slide2} alt="" />
                 </div>
               </SplideSlide>
               <SplideSlide onClick={() => handleSlideClick(2)}>
-                <div className="h-64 text-white flex items-center justify-center">
+                <div className="h-64 text-white flex items-center justify-center lg:scale-100 scale-75">
                   <img src={slide3} alt="" />
                 </div>
               </SplideSlide>
               <SplideSlide onClick={() => handleSlideClick(3)}>
-                <div className="h-64 text-white flex items-center justify-center">
+                <div className="h-64 text-white flex items-center justify-center lg:scale-100 scale-75">
                   <img src={slide1} alt="" />
                 </div>
               </SplideSlide>
               <SplideSlide onClick={() => handleSlideClick(4)}>
-                <div className="h-64 text-white flex items-center justify-center">
+                <div className="h-64 text-white flex items-center justify-center lg:scale-100 scale-75">
                   <img src={slide2} alt="" />
                 </div>
               </SplideSlide>
               <SplideSlide onClick={() => handleSlideClick(5)}>
-                <div className="h-64 text-white flex items-center justify-center">
+                <div className="h-64 text-white flex items-center justify-center lg:scale-100 scale-75">
                   <img src={slide3} alt="" />
                 </div>
               </SplideSlide>
               <SplideSlide onClick={() => handleSlideClick(6)}>
-                <div className="h-64 text-white flex items-center justify-center">
+                <div className="h-64 text-white flex items-center justify-center lg:scale-100 scale-75">
                   <img src={slide1} alt="" />
                 </div>
               </SplideSlide>
               <SplideSlide onClick={() => handleSlideClick(7)}>
-                <div className="h-64 text-white flex items-center justify-center">
+                <div className="h-64 text-white flex items-center justify-center lg:scale-100 scale-75">
                   <img src={slide2} alt="" />
                 </div>
               </SplideSlide>

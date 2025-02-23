@@ -40,7 +40,7 @@ const OurSkills = () => {
         </div>
         <div
           id=""
-          className="w-full mt-8 flex justify-between"
+          className="w-full mt-8 flex justify-around"
           data-aos="slide-up"
           data-aos-duration="1200"
         >
