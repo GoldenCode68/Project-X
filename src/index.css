@@ -126,6 +126,13 @@ body {
     font-size: 10px;
     margin-top: 2px;
   }
+  .imgheader{
+    width: 50px;
+  }
+  .textheader{
+    font-size: 45px;
+    margin-top: 5px;
+  }
 }
 
 @media screen and (min-width: 768px) {
