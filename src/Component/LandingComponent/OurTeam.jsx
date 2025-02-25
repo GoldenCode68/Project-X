@@ -42,22 +42,20 @@ const OurTeam = () => {
                     <img
                       id="imgourteam"
                       src={item.profilePicture}
-                      className="rounded-full w-36 h-36"
+                      className="rounded-full w-36 h-36 mt-3"
                     />
                   </div>
-                  <div className="names lg:text-xl md:text-xl text-[12px] tracking-wider">
+                  <div className="names lg:text-xl md:text-xl text-[12px] tracking-wider mt-2">
                     {item.name}
                   </div>
 
-                  {item.skills.map((skill) => (
                     <span
-                      key={skill.id}
+                      
                       className="flex"
                       style={{ fontFamily: "satoshi" }}
                     >
-                      ( <div className="text-violet-800 ">{skill.name}</div> )
+                      <div className="text-violet-800 mb-5" id="titleourteam">{item.title}</div>
                     </span>
-                  ))}
                 </div>
               </Link>
             </div>
