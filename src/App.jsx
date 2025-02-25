@@ -16,7 +16,7 @@ function App() {
           element:<Landing/>
         },
         {
-          path:'/Profile',
+          path:'/Profile/:id',
           element:<Profile/>
         }
       ]
