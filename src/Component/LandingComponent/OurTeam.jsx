@@ -49,13 +49,11 @@ const OurTeam = () => {
                     {item.name}
                   </div>
 
-                    <span
-                      
-                      className="flex"
-                      style={{ fontFamily: "satoshi" }}
-                    >
-                      <div className="text-violet-800 mb-5" id="titleourteam">{item.title}</div>
-                    </span>
+                  <span className="flex" style={{ fontFamily: "satoshi" }}>
+                    <div className="text-violet-800 mb-5" id="titleourteam">
+                      {item.title}
+                    </div>
+                  </span>
                 </div>
               </Link>
             </div>
