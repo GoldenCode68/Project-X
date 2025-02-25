@@ -40,6 +40,7 @@ const OurTeam = () => {
                 >
                   <div className="">
                     <img
+                      id="imgourteam"
                       src={item.profilePicture}
                       className="rounded-full w-36 h-36"
                     />
