@@ -1,8 +1,16 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
+import test from "../../assets/Profile/img/test.png";
 
 const MyPortfolio = () => {
-  const [List, setList] = useState([{}]);
+  const [List, setList] = useState([
+    { id: "1" },
+    { id: "2" },
+    { id: "3" },
+    { id: "4" },
+    { id: "5" },
+    { id: "6" },
+  ]);
 
   useEffect(() => {
     AOS.init();
@@ -24,17 +32,26 @@ const MyPortfolio = () => {
       <div id="portfolio" className="flex justify-around flex-wrap">
         {/*  */}
 
-        <div className="w-96 h-full border-2 border-violet-800 rounded-3xl bg-gradient-to-r from-zinc-900 to-black ml-1.5 mr-1.5 mb-10">
-          <div className="my-protfolio w-80 h-96 m-auto mt-8 border-2 "></div>
-          <div className="w-80 h-0.5 m-auto mt-10 bg-gradient-to-r from-purple-500 to-blue-600"></div>
-          <div
-            className="w-48 h-7 m-auto mt-5 bg-gradient-to-r from-purple-500 to-blue-600 bg-clip-text text-transparent text-2xl"
-            style={{ fontFamily: "actor" }}
-          >
-            Portfolio Website
-          </div>
-          <div className="h-8"></div>
-        </div>
+        {List.map((item) => {
+          return (
+            <div
+              key={item.id}
+              className="w-96 h-full border-2 border-violet-800 rounded-3xl bg-gradient-to-r from-zinc-900 to-black ml-1.5 mr-1.5 mb-10"
+            >
+              <div className="my-protfolio w-80 h-72 m-auto mt-20">
+                <img src={test} />
+              </div>
+              <div className="w-80 h-0.5 m-auto mt-16 bg-gradient-to-r from-purple-500 to-blue-600"></div>
+              <div
+                className="w-48 h-7 m-auto mt-5 bg-gradient-to-r from-purple-500 to-blue-600 bg-clip-text text-transparent text-2xl"
+                style={{ fontFamily: "actor" }}
+              >
+                Portfolio Website
+              </div>
+              <div className="h-8"></div>
+            </div>
+          );
+        })}
         {/*  */}
       </div>
     </div>
