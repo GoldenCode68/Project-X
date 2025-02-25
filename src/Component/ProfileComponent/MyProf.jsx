@@ -22,7 +22,7 @@ const MyProf = () => {
           <div className="w-full h-full" key={item}>
             {/* img */}
             <div className="border-2 border-violet-800 w-32 h-32 rounded-full m-auto mt-10">
-              <img src={item.profilePicture} className="rounded-full" />
+              <img src={item.profilePicture} className="rounded-full w-32 h-32" />
             </div>
             {/* person */}
             <div className="text-center mt-6 text-2xl">{item.name}</div>
