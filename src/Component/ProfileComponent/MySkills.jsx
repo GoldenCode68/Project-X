@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
+import logoskill from "../../assets/Profile/img/Vector.png"
 
 const MySkills = () => {
   const [ListSkill, setListSkill] = useState([
@@ -21,7 +22,7 @@ const MySkills = () => {
         {/* logo skill and text */}
         <div className="border-violet-800 w-full h-10">
           <div className="border-red-800 w-10 h-10 float-left">
-            <img src="./src/assets/Profile/img/Vector.png" />
+            <img src={logoskill} />
           </div>
           <div
             className="float-left w-36 h-10 ml-2 text-xl leading-10 mt-1"
