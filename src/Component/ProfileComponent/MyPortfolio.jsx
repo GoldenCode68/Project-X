@@ -41,7 +41,7 @@ const MyPortfolio = () => {
               <div className="my-protfolio w-80 h-72 m-auto mt-20">
                 <img src={test} />
               </div>
-              <div className="w-80 h-0.5 m-auto mt-16 bg-gradient-to-r from-purple-500 to-blue-600"></div>
+              <div className="khat w-80 h-0.5 m-auto mt-16 bg-gradient-to-r from-purple-500 to-blue-600"></div>
               <div
                 className="w-48 h-7 m-auto mt-5 bg-gradient-to-r from-purple-500 to-blue-600 bg-clip-text text-transparent text-2xl"
                 style={{ fontFamily: "actor" }}

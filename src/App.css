@@ -17,22 +17,25 @@
   .box-right {
     width: 20%;
   }
-  .info{
+  .info {
     margin-left: 50px;
   }
-  .birth{
+  .birth {
     margin-left: 1px;
   }
-  .my-protfolio{
+  .my-protfolio {
     width: 85%;
-    height: 300px;
+    margin-top: 50px;
   }
-  .footer{
+  .footer {
     display: block;
   }
-  .part-tow{
+  .part-tow {
     position: relative;
     top: -20px;
-    
-}
+  }
+  .khat{
+    width: 270px;
+    margin-top: 1px;
+  }
 }
