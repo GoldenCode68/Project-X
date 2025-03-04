@@ -56,7 +56,9 @@ const OurTeam = () => {
                         <span
                           key={index}
                           className=""
-                          style={{ color: index % 2 === 0 ? "#681AFF" : "white" }}
+                          style={{
+                            color: index % 2 === 0 ? "#681AFF" : "white",
+                          }}
                         >
                           {" "}
                           {word}{" "}
