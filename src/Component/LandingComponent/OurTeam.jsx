@@ -55,7 +55,8 @@ const OurTeam = () => {
                       {item.title.split(" ").map((word, index) => (
                         <span
                           key={index}
-                          style={{ color: index % 2 === 0 ? "blue" : "white" }}
+                          className=""
+                          style={{ color: index % 2 === 0 ? "#681AFF" : "white" }}
                         >
                           {" "}
                           {word}{" "}
