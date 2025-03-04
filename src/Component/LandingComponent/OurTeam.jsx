@@ -49,11 +49,28 @@ const OurTeam = () => {
                     {item.name}
                   </div>
 
-                  <span className="flex" style={{ fontFamily: "satoshi" }}>
-                    <div className="text-violet-800 mb-5" id="titleourteam">
+                  {/* <span className="flex" style={{ fontFamily: "satoshi" }}>
+                    (<div className="text-violet-800 mb-5" id="titleourteam">
                       {item.title}
                     </div>
-                  </span>
+                    )
+                  </span> */}
+
+                  <div className="text-white mb-5" id="titleourteam">
+                    <span style={{ fontFamily: "satoshi" }}>
+                      (
+                      {item.title.split(" ").map((word, index) => (
+                        <span
+                          key={index}
+                          style={{ color: index % 2 === 0 ? "blue" : "white" }}
+                        >
+                          {" "}
+                          {word}{" "}
+                        </span>
+                      ))}
+                      )
+                    </span>
+                  </div>
                 </div>
               </Link>
             </div>
