@@ -1,50 +1,100 @@
-import React, { useEffect, useState } from "react";
+// import React, { useEffect } from "react";
 import AOS from "aos";
 import logoskill from "../../assets/Profile/img/Vector.png";
-import axios from "axios";
 import { useParams } from "react-router-dom";
 
 const MySkills = () => {
   const { id } = useParams();
-  const [List, setList] = useState(null);
 
-  const getlist = async () => {
-    const res = await axios.get("https://reevan.ir/api/getPersonalPage/");
-    const datafind = res.data.find((item) => {
-      return item.id === id;
-    });
-    setList(datafind);
-  };
+  const staticData = [
+    {
+      id: "1",
+      skills: [
+        { id: 1, name: "HTML", value: 80 },
+        { id: 2, name: "CSS", value: 80 },
+        { id: 3, name: "JavaScript", value: 70 },
+        { id: 4, name: "React", value: 85 },
+        { id: 4, name: "git", value: 60 },
+      ],
+    },
+    {
+      id: "2",
+      skills: [
+        { id: 1, name: "typescript", value: 85 },
+        { id: 2, name: "Django", value: 40 },
+        { id: 3, name: "MySQL", value: 70 },
+      ],
+    },
+    {
+      id: "3",
+      skills: [
+        { id: 1, name: "HTML", value: 80 },
+        { id: 2, name: "CSS", value: 80 },
+        { id: 3, name: "JavaScript", value: 70 },
+        { id: 4, name: "React", value: 85 },
+        { id: 4, name: "Django", value: 50 },
+      ],
+    },
+    {
+      id: "4",
+      skills: [
+        { id: 1, name: "UI", value: 85 },
+        { id: 2, name: "UX", value: 40 },
+        { id: 3, name: "photoshop", value: 70 },
+      ],
+    },
+    {
+      id: "5",
+      skills: [
+        { id: 1, name: "UI", value: 40 },
+        { id: 2, name: "UX", value: 85 },
+        { id: 3, name: "ilastrator", value: 70 },
+      ],
+    },
+  ];
 
-  useEffect(() => {
-    AOS.init();
-    getlist();
-  }, []);
+  const MyData = staticData.find((item) => item.id === id);
+
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
+
+  // DAYNAMIC DATA
+
+  // const getlist = async () => {
+  //   const res = await axios.get("https://reevan.ir/api/getPersonalPage/");
+  //   const datafind = res.data.find((item) => {
+  //     return item.id === id;
+  //   });
+  //   setList(datafind);
+  // };
+
+  // useEffect(() => {
+  //   AOS.init();
+  //   getlist();
+  // }, []);
 
   return (
     <div
       data-aos="fade-up"
       data-aos-duration="900"
-      className="border-2 border-violet-800 w-3/4 h-full m-auto rounded-3xl mt-20 bg-gradient-to-b from-zinc-900  to-black z-10"
+      className="border-2 border-violet-800 w-3/4 h-full m-auto rounded-3xl mt-20 bg-gradient-to-b from-zinc-900 to-black z-10"
     >
       <div className="w-11/12 h-5/6 m-auto mt-8">
         {/* logo skill and text */}
-        <div className="border-violet-800 w-full h-10">
-          <div className="border-red-800 w-10 h-10 float-left">
-            <img src={logoskill} />
-          </div>
+        <div className="w-full h-10 flex items-center">
+          <img src={logoskill} alt="skills logo" className="w-10 h-10" />
           <div
-            className="float-left w-36 h-10 ml-2 text-xl leading-10 mt-1"
+            className="ml-2 text-xl leading-10 mt-1"
             style={{ fontFamily: "poppins" }}
           >
             Skills
           </div>
         </div>
-        {/* Skills */}
 
-        {List &&
-          List.skills &&
-          List.skills.map((skill) => (
+        {/* Skills */}
+        {MyData &&
+          MyData.skills.map((skill) => (
             <div className="mb-4 mt-10" key={skill.id}>
               <div className="flex justify-between mb-2">
                 <span>{skill.name}</span>
@@ -63,8 +113,8 @@ const MySkills = () => {
               </div>
             </div>
           ))}
+
         <div className="mt-20"></div>
-        {/*  */}
       </div>
     </div>
   );
