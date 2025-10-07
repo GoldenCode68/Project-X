@@ -1,6 +1,6 @@
 {
-  "homepage": "https://mahyar-mollaei.github.io/reponame",
-  "name": "project-x",
+  "name": "static-reevan-project",
+  "homepage": "https://mahyar-mollaei.github.io/Static-Reevan-Project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",

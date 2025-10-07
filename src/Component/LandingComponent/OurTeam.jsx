@@ -4,19 +4,57 @@ import AOS from "aos";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import img1 from "../../assets/Profile/img/01.jpg";
+import img2 from "../../assets/Profile/img/02.jpg";
+import img3 from "../../assets/Profile/img/03.jpg";
+import img4 from "../../assets/Profile/img/04.jpg";
+import img5 from "../../assets/Profile/img/05.jpg";
 
 const OurTeam = () => {
-  const [List, setList] = useState(null);
+  const [List, setList] = useState([
+    {
+      id: 1,
+      name: "Mahyar Mollaei",
+      title: "Frontend Developer",
+      profilePicture: img1,
+    },
+    {
+      id: 2,
+      name: "Mohsen Taghavi",
+      title: "Backend Developer",
+      profilePicture: img2,
+    },
+    {
+      id: 3,
+      name: "Amir reza Khatiri",
+      title: "Frontend Developer",
+      profilePicture: img3,
+    },
+    {
+      id: 4,
+      name: "Amirhosein Nikaen",
+      title: "Ui Designer",
+      profilePicture: img4,
+    },
+    {
+      id: 5,
+      name: "Ariyan Hasanpor",
+      title: "Ux Designer",
+      profilePicture: img5,
+    },
+  ]);
 
-  const getlist = async () => {
-    const res = await axios.get("https://reevan.ir/api/getPersonalPage/");
-    setList(res.data);
-  };
+  // DAYNAMIC DATA
 
-  useEffect(() => {
-    AOS.init();
-    getlist();
-  }, []);
+  // const getlist = async () => {
+  //   const res = await axios.get("https://reevan.ir/api/getPersonalPage/");
+  //   setList(res.data);
+  // };
+
+  // useEffect(() => {
+  //   AOS.init();
+  //   getlist();
+  // }, []);
 
   return (
     <div id="content-one-box" className="lg:w-10/12 md:w:10/12 w-full m-auto">
